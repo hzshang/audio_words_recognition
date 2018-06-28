@@ -55,8 +55,8 @@ def record():
 def main():
     signal.signal(signal.SIGINT, signal_handler)
     if len(sys.argv) == 1 or sys.argv[1] != 'net':
-        cla=classfier()
-        cla.load_svm(CLASSFIER)
+        cla=classfier(kernel="rbf",gamma1=GAMMA1,gamma2=GAMMA2)
+        cla.load_svm(CLASSFIER1,CLASSFIER2)
     else:
         cla=Net()
         cla.load_file(NET_MODEL)

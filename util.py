@@ -67,10 +67,12 @@ TRAIN_FEATURE="./output/train_feature.txt"
 TEST_FEATURE="./output/test_feature.txt"
 VERIFY_FEATURE="./output/verify_feature.txt"
 
-CLASSFIER="./output/classfier.pkl"
+CLASSFIER1="./output/classfier1.pkl"
+CLASSFIER2="./output/classfier2.pkl"
 NET_MODEL="./output/model.pt"
 LOSS_PATH="./output/loss.txt"
-GAMMA=0.0000081
+GAMMA1=0.0000081
+GAMMA2=0.0000081
 CLIP_DIS=0.55
 
 config={
